@@ -40,7 +40,7 @@
             </div>
 
             <div id="identification">
-<!--                Pour inclure un nouveau module dans une div...-->
+        <!-- Pour inclure un nouveau module dans une div...-->
                 <jdoc:include type="modules" name="identification" />
             </div>
 

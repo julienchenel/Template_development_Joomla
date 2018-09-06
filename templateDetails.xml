@@ -26,6 +26,7 @@
 		Dans le fichier index.php, on attribue  un nom à chaque balise
 		<jdoc:include> et on le reference dans les balises <position>.
 		L'ordre des nom n'a pas d'importance.
+		N.B : Pas besoin de référencer les <jdoc:include> de type "component" !
 
 		-->
 		<position>pied</position>

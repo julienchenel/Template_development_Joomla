@@ -9,7 +9,7 @@ jQuery(document).ready(function(e) {
 
 // comportement du bouton fermer
 
-    jQuery("#btn_fermer").click(function(e) {
-        jQuery("#menu_mobile").animate({ right: -320 }, 800);
-    });
+    // Un petit peu JQuery ! A vous de créer la fonction !
+    // C'est quasiii la même que la fonction ci-dessus...
+
 });

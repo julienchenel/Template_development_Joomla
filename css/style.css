@@ -10,13 +10,14 @@ body {
     height: 100%;
 }
 
-
 /*Style mobile : approche mobile-first...*/
 
 #conteneur {
     width: 100%;
     background-color: floralwhite;
 }
+
+/*première bande coin supérieur*/
 
 #bandeau {
     padding: 20px;
@@ -25,11 +26,14 @@ body {
     border-bottom: solid 1px deeppink;
 }
 
+/*Style menu en mode mobile - disparition...*/
+
 #menu_bureau {
     display: none;
-    list-style: inside;
 
 }
+
+/*Bouton menu burger en mode - en mode mobile et tablette*!*/
 
 #btn_menu {
     position: fixed;
@@ -40,11 +44,15 @@ body {
     border: none;
 }
 
+/*Bouton fermer le volet vert - menu droite - en mode mobile et tablette*!*/
+
 #btn_fermer {
     /* The default style button sucks, do this */
     background: none;
     border: none;
 }
+
+/*Style du volet (vert) - menu de droite - en mode mobile et tablette*/
 
 #menu_mobile {
     width: 320px;
@@ -62,6 +70,8 @@ body {
     right: -320px;
 }
 
+/*Style du componen = texte des articles, ens somme */
+
 #contenu {
     padding: 20px;
     box-sizing: border-box;
@@ -69,6 +79,10 @@ body {
     border: solid 1px deeppink;
     margin-top: 10px;
 }
+
+/* Style des petits div contenu dans les "apartés" (éléments aside)
+pour accueillir des actu, news, connexion, etc... */
+
 
 #newsletter,
 #identification {
@@ -79,14 +93,17 @@ body {
     margin-top: 10px;
 }
 
+/*style du footer - mobile */
+
 #pied {
     padding: 20px;
     /*
-    border-box indique au navigateur de prendre en
+    "border-box" indique au navigateur de prendre en
     compte la bordure et le remplissage dans la valeur
     définie pour la largeur et la hauteur. Autrement dit
     si on définit un élément avec une largeur de 100 pixels,
     ces 100 pixels inclueront la bordure et le remplissage
+    Pratique !
     */
     box-sizing: border-box;
     background-color: #AAA;
@@ -94,7 +111,7 @@ body {
     margin-top: 10px;
 }
 
-/*Style pour les tablettes*/
+/*Quelques ajustements de style pour les tablettes*/
 
 @media screen and (min-width:768px) {
     #barre_laterale {
@@ -107,7 +124,7 @@ body {
     }
 }
 
-/*Style pour les interfaces Desktop*/
+/*Quelques ajustements de style pour les interfaces Desktop*/
 
 @media screen and (min-width:1200px) {
     #conteneur {
@@ -120,10 +137,13 @@ body {
     #identification {
         width: 100%;
     }
+    /*Disparition du bouton burger et du menu
+    de droite (volet vert) en mode Desktop... */
     #btn_menu,
     #menu_mobile {
         display: none;
     }
+    /*...remplacés par menu_desktop*/
     #menu_bureau {
         display: inline-flex;
         padding: 5px;
@@ -141,6 +161,7 @@ body {
         flex-wrap: wrap;
         margin-bottom: 10px;
     }
+    /*Style du Footer*/
     #pied {
         clear: both;
     }
