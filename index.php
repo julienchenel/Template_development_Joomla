@@ -8,7 +8,6 @@
     <jdoc:include type="head" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="templates/myTemplate/css/style.css" />
-
 </head>
 
 <body>
@@ -41,12 +40,17 @@
             </div>
 
             <div id="identification">
+<!--                Pour inclure un nouveau module dans une div...-->
                 <jdoc:include type="modules" name="identification" />
             </div>
 
-<!--            Créer un autre div qui incluera un nouveau module.-->
-<!--            Pensez à y ajouter une balise <jdoc:include> et à la nommer !-->
-<!--            Il ne faut pas oublier de modifier le CSS bien sûr.-->
+        <!--
+
+        Créer une autre div qui incluera un nouveau module.
+        Pensez à y ajouter une balise <jdoc:include> et à la nommer
+        Il ne faut pas oublier de modifier le CSS bien sûr.
+
+        -->
 
         </aside>
 

@@ -35,11 +35,13 @@ body {
     position: fixed;
     top: 0;
     right: 20px;
+    /* The default style button sucks, do this */
     background: none;
     border: none;
 }
 
 #btn_fermer {
+    /* The default style button sucks, do this */
     background: none;
     border: none;
 }
@@ -50,6 +52,11 @@ body {
     background-color: palegreen;
     border: solid 1px forestgreen;
     list-style: inside;
+
+    /*A positioned element is fixed relative
+    to the browser window, which means that it
+    always remains in the same place even if the
+    page scrolls.*/
     position: fixed;
     top: 0;
     right: -320px;
@@ -74,6 +81,13 @@ body {
 
 #pied {
     padding: 20px;
+    /*
+    border-box indique au navigateur de prendre en
+    compte la bordure et le remplissage dans la valeur
+    définie pour la largeur et la hauteur. Autrement dit
+    si on définit un élément avec une largeur de 100 pixels,
+    ces 100 pixels inclueront la bordure et le remplissage
+    */
     box-sizing: border-box;
     background-color: #AAA;
     border: solid 1px darkslategrey;
@@ -111,10 +125,10 @@ body {
         display: none;
     }
     #menu_bureau {
-        display: block;
-        padding: 2px;
+        display: inline-flex;
+        padding: 5px;
         margin-top: 10px;
-        background-color: lightsalmon;
+        background-color: darkgrey;
     }
     #contenu {
         width: 850px;

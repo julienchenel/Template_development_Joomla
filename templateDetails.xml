@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="2.5" type="template">
-	<name>mynewtemplate</name>
+	<name>My New Template</name>
 	<creationDate>2018-09-05</creationDate>
-	<author>Julien Chénel</author>
-	<authorEmail>julien.chenel@example.com</authorEmail>
+	<author>Your Name</author>
+	<authorEmail>name@example.com</authorEmail>
 	<authorUrl>http://www.example.com</authorUrl>
-	<copyright>Julien Chénel 2018</copyright>
+	<copyright>Name 2018</copyright>
 	<license>GNU/GPL</license>
 	<version>1.0.0</version>
-	<description>JooJoo Template</description>
+	<description>Your first Template</description>
 
 	<positions>
 		<position>bandeau</position>
@@ -18,10 +18,16 @@
 		<position>menu_pied</position>
 		<position>newsletter</position>
 		<position>identification</position>
-		<!--<position>Name of your html section</position>-->
-		<!--Dans le fichier o,dex.php, on attribue  un nom à chaque -->
-		<!--<jdoc:include> et on le reference dans les balises position. -->
-		<!--L'ordre n'a pas d'importance. -->
+
+		<!--<position>Name of the <jdoc:include> tag</position>-->
+
+		<!--
+
+		Dans le fichier index.php, on attribue  un nom à chaque balise
+		<jdoc:include> et on le reference dans les balises <position>.
+		L'ordre des nom n'a pas d'importance.
+
+		-->
 		<position>pied</position>
 	</positions>
 </extension>
